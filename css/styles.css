@@ -607,6 +607,72 @@ address .contacts {
     background-color: var(--accent-color);
 }
 
+.form-subscription {
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    margin-left: 93px;
+
+    width: 570px;
+    height: 86px;
+}
+
+.form-subscription .field {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-subscription .subscription-title{
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--focus-color);
+}
+
+.field .field-email {
+    display: block;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--section-background-color);
+}
+
+
+.form-subscription button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    padding: 10px 27px;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background-color: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--focus-color);
+    border: none;
+
+}
+
+.form-subscription .icon-send {
+    margin-left: 10px;
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -638,8 +704,6 @@ address .contacts {
     top: 50%;
     left: 50%;
 
-    padding: 8px;
-
     min-width: 528px;
     min-height: 581px;
     background-color: var(--focus-color);
@@ -655,12 +719,14 @@ address .contacts {
 }
 
 .modal .modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
     height: 30px;
-    margin-left: auto;
     cursor: pointer;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -676,6 +742,20 @@ address .contacts {
     fill: var(--accent-color);
 }
 
+textarea {
+    resize: none;
+}
+
+.modal-form {
+    width:448px;
+    padding: 40px 39px 40px 41px;
+}
+
+.modal-form .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
 
 
 /* Стилі Портфоліо */
