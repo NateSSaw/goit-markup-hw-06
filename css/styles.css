@@ -27,6 +27,10 @@
     --bg-staff-color: #F5F4FA;
     --border-color: #EEEEEE;
     --border-header-color: #ECECEC;
+    --border-footer-form: rgba(255, 255, 255, 0.3);
+    --border-form-modal: rgba(33, 33, 33, 0.2);
+    --placeholder-modal-color: rgba(117, 117, 117, 0.5);
+    --footer-placeholder-color: rgba(255, 255, 255, 0.6);
     --icon-header-color: #757575;
     --icon-social-first: #afb1b8;
     --time-animation: 250ms;
@@ -643,7 +647,7 @@ address .contacts {
     height: 50px;
     padding: 15px 16px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--border-footer-form);
     border-radius: 4px;
     outline: none;
     background-color: var(--section-background-color);
@@ -654,7 +658,7 @@ address .contacts {
 .field-email:placeholder-shown{
     font-size: 16px;
     line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-placeholder-color);
 }
 
 .form-subscription .field:focus-within > .field-email {
@@ -796,7 +800,7 @@ address .contacts {
     padding-bottom: 12px;
     padding-left: 42px;
     padding-right: 12px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--border-form-modal);
     border-radius: 4px;
     outline: none;
 
@@ -836,7 +840,7 @@ address .contacts {
     min-height: 120px;
     padding: 12px 16px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--border-form-modal);
     border-radius: 4px;
 
     resize: none;
@@ -853,7 +857,7 @@ address .contacts {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: var(--placeholder-modal-color);
  }
 
 .modal-form .policy-label {
