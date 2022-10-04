@@ -620,6 +620,7 @@ address .contacts {
 .form-subscription .field {
     display: flex;
     flex-direction: column;
+    margin-right: 12px;
 
 }
 
@@ -662,7 +663,6 @@ address .contacts {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
     padding: 10px 27px;
 
     width: 200px;
@@ -678,6 +678,13 @@ address .contacts {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--focus-color);
     border: none;
+
+    transition: background-color var(--time-animation) var(--cubic);
+}
+
+.form-subscription button:focus,
+.form-subscription button:hover {
+    background-color: var(--button-hover-color);
 }
 
 .form-subscription .icon-send {
@@ -759,6 +766,7 @@ address .contacts {
 }
 
 .modal-form .form-title {
+    margin-top: 0;
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -864,6 +872,7 @@ address .contacts {
     left: 45px;
     top: 4px;
     background-color: var(--focus-color);
+    fill: var(--focus-color);
 
     border: 2px solid var(--title-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
