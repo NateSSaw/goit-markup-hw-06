@@ -608,7 +608,6 @@ address .contacts {
 }
 
 .form-subscription {
-    display: flex;
     justify-content: baseline;
     align-items: flex-end;
     margin-left: 93px;
@@ -617,11 +616,8 @@ address .contacts {
     height: 86px;
 }
 
-.form-subscription .field {
+.form-subscription .form {
     display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-
 }
 
 .form-subscription .subscription-title{
@@ -634,6 +630,12 @@ address .contacts {
     color: var(--focus-color);
 }
 
+.form-subscription .field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+
+}
 
 .field .field-email {
     display: block;
@@ -720,6 +722,7 @@ address .contacts {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 40px 39px 40px 41px;
 
     min-width: 528px;
     min-height: 581px;
@@ -762,10 +765,9 @@ address .contacts {
 .modal-form {
     width: 100%;
     height: 100%;
-    padding: 40px 39px 40px 41px;
 }
 
-.modal-form .form-title {
+.modal .form-title {
     margin-top: 0;
     margin-bottom: 12px;
     margin-left: auto;
@@ -869,7 +871,7 @@ address .contacts {
     position: absolute;
     width: 16px;
     height: 15px;
-    left: 45px;
+    left: 10px;
     top: 4px;
     background-color: var(--focus-color);
     fill: var(--focus-color);
@@ -900,10 +902,12 @@ address .contacts {
 }
 
 .modal-form .form-button {
+    display: block;
     width: 200px;
     height: 50px;
     padding: 10px 52px;
-    margin: 0 164px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
